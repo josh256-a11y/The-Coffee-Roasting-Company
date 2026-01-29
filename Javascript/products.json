@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Espresso Blend",
+    "price": 12.5,
+    "category": "blends",
+    "img": "Images/house blend.webp"
+  },
+  {
+    "id": 2,
+    "title": "Single Origin Colombia",
+    "price": 14.0,
+    "category": "single-origin",
+    "img": "Images/Stellenbosch Espresso Blend.webp"
+  }
+]
