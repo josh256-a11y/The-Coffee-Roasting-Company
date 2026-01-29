@@ -1,7 +1,10 @@
+
 # Coffee Roasting Company Website
 
 This repository contains the full website for *The Coffee Roasting Company*,
 including responsive layout, gallery, form validation, and a custom lightbox plugin.
+
+github link: https://github.com/josh256-a11y/The-Coffee-Roasting-Company.git
 
 ## Features
 - Coffee-themed colour palette (coffee brown, gold, green)
@@ -48,7 +51,7 @@ git init
 git add .
 git commit -m "Initial upload"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git remote add origin https://github.com/josh256-a11y/The-Coffee-Roasting-Company.git
 git push -u origin main
 ```
 
@@ -57,7 +60,7 @@ git push -u origin main
 - Click the green **Code** button
 - Copy the HTTPS URL (Example):
 ```
-https://github.com/username/coffee-roasting-company.git
+https://github.com/josh256-a11y/The-Coffee-Roasting-Company.git 
 ```
 
 ## Credits
