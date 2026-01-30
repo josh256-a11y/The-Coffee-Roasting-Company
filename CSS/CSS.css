@@ -1,0 +1,59 @@
+/* CSS */
+* { box-sizing: border-box; }
+html,body{ margin:0; padding:0; font-family: Aptos, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#222; line-height:1.45; }
+.container { max-width:1100px; margin:0 auto; padding:1rem; }
+
+
+.site-header { background:#fff; border-bottom:1px solid #eee; position:sticky; top:0; z-index:10; }
+.header-inner { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+.logo { font-weight:700; text-decoration:none; color:#222; font-size:1.1rem; }
+
+
+.main-nav .nav-list { list-style:none; display:flex; gap:1rem; margin:0; padding:0; }
+.main-nav .nav-list a { text-decoration:none; padding:.5rem; border-radius:.25rem; }
+.main-nav .nav-list a[aria-current="page"]{ font-weight:700; }
+
+
+.nav-toggle { display:none; background:transparent; border:1px solid #ddd; padding:.35rem .6rem; border-radius:.25rem; }
+
+
+.hero { position:relative; display:flex; align-items:center; min-height:40vh; color:#fff; background:#111; }
+.hero-img { width:100%; height:auto; object-fit:cover; display:block; opacity:.95; }
+.hero-content { position:absolute; left:2rem; top:30%; max-width:40rem; }
+.hero h1 { font-size:2rem; margin:0 0 .5rem; color:#fff; }
+.btn { display:inline-block; text-decoration:none; padding:.6rem 1rem; background:#6b4f2b; color:#fff; border-radius:.4rem; }
+
+
+.features { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; padding:2rem 0; }
+.feature { background:#fff; padding:1rem; border-radius:.5rem; box-shadow:0 6px 18px rgba(0,0,0,.06); }
+
+
+.contact-info-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.location-card iframe { width:100%; height:240px; border:0; }
+
+
+.form { display:flex; flex-direction:column; gap:.6rem; max-width:720px; }
+.form input, .form textarea, .form select { padding:.6rem; border-radius:.35rem; border:1px solid #ccc; font:inherit; }
+.form-feedback { margin-top:.5rem; color:#006400; }
+
+
+.site-footer { background:#f8f8f8; padding:1rem 0; border-top:1px solid #eee; text-align:center; }
+
+
+.hidden { display:none; }
+
+
+@media (max-width: 900px) {
+  .features { grid-template-columns:1fr 1fr; }
+  .hero-content { left:1rem; top:25%; max-width:30rem; }
+  .contact-info-grid { grid-template-columns:1fr; }
+}
+
+@media (max-width: 600px) {
+  .header-inner { padding: .5rem 1rem; }
+  .main-nav .nav-list { display:none; }
+  .nav-toggle { display:inline-block; }
+  .hero { min-height:50vh; }
+  .hero h1 { font-size:1.4rem; }
+  .features { grid-template-columns:1fr; }
+}
