@@ -1,31 +1,33 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us | The Coffee Roasting Company</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <meta name="description" content="Coffee Roasting Company – premium roasted beans, quality brews, and artisan equipment.">
+<meta name="keywords" content="coffee, roasting, espresso, beans, café">
+
 </head>
 <body>
 
-  <!-- Header Section -->
-  <header>
-    <div class="logo">
-      <h2>The Coffee Roasting Company</h2>
+ 
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Coffee Roasting Co.</a>
+      <nav class="main-nav" id="main-nav">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList">Menu</button>
+        <ul id="navList" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact us.html">Contact us</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="our-story.html" class="active">Our Story</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="brewing-guides.html">Brewing Guides</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
-
-  <!-- Hero Section -->
+ 
   <section class="hero">
     <div class="hero-text">
       <h1>Our Story</h1>
@@ -33,7 +35,7 @@
     </div>
   </section>
 
-  <!-- About Section -->
+  
   <section class="about">
     <h2>Our Passion, Your Coffee</h2>
     <p>
@@ -50,7 +52,7 @@
     </p>
   </section>
 
-  <!-- Mission & Values -->
+  
   <section class="values">
     <h2>What We Stand For</h2>
     <ul>
@@ -61,14 +63,7 @@
     </ul>
   </section>
 
-  <!-- Call-to-Action -->
-  <section class="cta">
-    <h2>Want to Taste Our Passion?</h2>
-    <p>Explore our range of signature blends and discover your perfect cup.</p>
-    <a href="shop.html"><button>Shop Our Coffee</button></a>
-  </section>
-
-  <!-- Footer Section -->
+  
   <footer>
     <div class="footer-logo">
       <h3>The Coffee Roasting Company</h3>
@@ -78,10 +73,10 @@
       <h4>Quick Links</h4>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="our-story.html">Our Story</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="brewing-guides.html">Brewing Guides</a></li>
-        <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
 
@@ -109,6 +104,26 @@
       <p>&copy; 2025 The Coffee Roasting Company. All rights reserved.</p>
     </div>
   </footer>
+
+<script src="Javascript/form-validation.js"></script>
+<script src="Javascript/lightbox.js"></script>
+
+<div class="map container">
+
+<div class="map container">
+<iframe 
+    src="https://www.google.com/maps?q=123+Coffee+Street,+Stellenbosch,+South+Africa&output=embed"
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+</div>
+
+</div>
 
 </body>
 </html>
