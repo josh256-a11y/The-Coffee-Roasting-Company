@@ -1,53 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Coffee Roasting Company</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Coffee Roasting Company</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="Javascript/JAVASCRIPT.js"></script>
+  <script src="Javascript/form-validation.js"></script>
+<script src="Javascript/lightbox.js"></script>
+
+
+
+<meta name="description" content="Coffee Roasting Company – premium roasted beans, quality brews, and artisan equipment.">
+<meta name="keywords" content="coffee, roasting, espresso, beans, café">
+
 </head>
 <body>
-
-  
-
-  <!-- Footer Section -->
-  <footer>
-    <div class="footer-logo">
-      <h3>The Coffee Roasting Company</h3>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Coffee Roasting Co.</a>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact us.html">Contact us</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <div class="footer-links">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our Story</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Brewing Guides</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
+  <main class="container contact-main">
+    <h1>Contact & Locations</h1>
+    <p>Visit our roastery or pop-up stall locations.</p>
 
-    <div class="footer-contact">
-      <h4>Contact Us</h4>
-      <p>123 Coffee Street, Stellenbosch, South Africa</p>
-      <p>Phone: +27 21 123 4567</p>
-      <p>Email: info@thecoffeeroastingcompany.co.za</p>
-    </div>
+    <section class="contact-info-grid">
+      <div class="location-card">
+        <h2>Roastery — Johannesburg</h2>
+        <p>123 Roast St, Johannesburg</p>
+ 
+        
+<div class="map container">
 
-    <div class="footer-social">
-      <h4>Follow Us</h4>
-      <p>[Icons: Facebook | Instagram | Twitter]</p>
-    </div>
+<div class="map container">
+ <iframe 
+    src="https://www.google.com/maps?q=123+Coffee+Street,+Stellenbosch,+South+Africa&output=embed"
+    width="150" 
+    height="250" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
 
-    <div class="footer-newsletter">
-      <h4>Newsletter</h4>
-      <form>
-        <input type="email" placeholder="Enter your email">
-        <button type="submit">Subscribe</button>
+</div>
+
+</div>
+
+      </div>
+
+      <div class="location-card">
+        <h2>Market Stall — Rosebank</h2>
+        <p>Market Lane, Rosebank</p>
+       
+        
+<div class="map container">
+
+<div class="map container">
+<iframe 
+    src="https://www.google.com/maps?q=123+Coffee+Street,+Stellenbosch,+South+Africa&output=embed"
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+</div>
+
+</div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Send us a message</h2>
+      <form id="contactForm" class="form" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+        <div id="formStatus" role="status" aria-live="polite" class="status" hidden></div>
       </form>
-    </div>
+    </section>
+  </main>
 
-    <div class="footer-bottom">
-      <p>&copy; 2025 The Coffee Roasting Company. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year3"></span> The Coffee Roasting Company</p>
     </div>
   </footer>
 
