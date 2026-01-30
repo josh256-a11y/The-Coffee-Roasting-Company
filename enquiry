@@ -1,0 +1,88 @@
+HTML
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Coffee Roasting Company – premium roasted beans, quality brews, and artisan equipment.">
+  <meta name="keywords" content="coffee, roasting, espresso, beans, café">
+  <title>Enquiry — Coffee Roasting Company</title>
+  <script src="Javascript/form-validation.js"></script>
+  <script src="Javascript/lightbox.js"></script>
+  <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Coffee Roasting Co.</a>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact us.html">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Make an Enquiry</h1>
+    <p>If you'd like a sample, a wholesale quote, or volunteer info for events, please complete the form below.</p>
+
+    <form id="enquiryForm" class="form" novalidate>
+      
+      <label for="name">Full name</label>
+      <input id="name" name="name" type="text" required minlength="2" />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="phone">Phone (optional)</label>
+      <input id="phone" name="phone" type="tel" pattern="^[0-9 +()\-]{7,}$" />
+
+      <label for="enquiryType">Enquiry type</label>
+      <select id="enquiryType" name="enquiryType" required>
+        <option value="">Choose...</option>
+        <option value="wholesale">Wholesale</option>
+        <option value="sample">Request a sample</option>
+        <option value="events">Events/Markets</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
+
+      <button type="submit" class="btn">Send Enquiry</button>
+    <div id="formStatus" role="status" aria-live="polite" class="status" hidden></div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year2"></span> The Coffee Roasting Company</p>
+    </div>
+  </footer>
+
+<div class="map container">
+
+<div class="map container">
+<iframe 
+    src="https://www.google.com/maps?q=123+Coffee+Street,+Stellenbosch,+South+Africa&output=embed"
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+</div>
+
+</div>
+
+</body>
+</html>
